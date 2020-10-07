@@ -2,6 +2,7 @@
  * @license Copyright (c) 2014-2020, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
+
 import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor.js';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
@@ -46,6 +47,7 @@ import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload'; 
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 
 class Editor extends ClassicEditor {}
@@ -88,9 +90,10 @@ Editor.builtinPlugins = [
 	Underline,
 	Image, 
 	ImageCaption,
-	ImageToolbar,
 	ImageStyle,
+	ImageToolbar, 
 	ImageUpload,
+	ImageResize,
 	SimpleUploadAdapter
 	// UploadAdapter,
 	// CKFinder
