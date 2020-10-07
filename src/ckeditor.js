@@ -43,6 +43,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 
 class Editor extends ClassicEditor {}
 
@@ -87,7 +88,8 @@ Editor.builtinPlugins = [
 	Table,
 	TableCellProperties,
 	TableProperties,
-	TableToolbar
+	TableToolbar,
+	Underline
 ];
 
 export default Editor;
