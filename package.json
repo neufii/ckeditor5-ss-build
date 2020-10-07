@@ -35,5 +35,9 @@
   },
   "scripts": {
     "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-adapter-ckfinder": "^23.0.0",
+    "@ckeditor/ckeditor5-ckfinder": "^23.0.0"
   }
 }

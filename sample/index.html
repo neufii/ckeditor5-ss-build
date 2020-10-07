@@ -119,9 +119,17 @@
 						'insertTable',
 						'mediaEmbed',
 						'undo',
-						'redo'
+						'redo',
+						'|',
+						'imageUpload'
 					]
 				},
+				simpleUpload: {
+                        uploadUrl: `${window.location.origin}/ajax/utility/sseditor/image/upload`,
+                        headers: {
+                            'X-CSRF-TOKEN': 123,
+                        }
+                    },
 				language: 'en',
 				table: {
 					contentToolbar: [
@@ -137,7 +145,7 @@
 			} )
 			.then( editor => {
 				window.editor = editor;
-		
+				console.log(Array.from( editor.ui.componentFactory.names() ));
 				
 				
 				
